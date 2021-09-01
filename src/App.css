@@ -1,18 +1,45 @@
 .layout {
   display: flex;
 }
+.toggle-sidebar {
+  display: none;
+  position: fixed;
+  top: 1rem;
+  left: 1rem;
+}
+.toggle-sidebar div {
+  height: 0;
+  border: 2px solid black;
+  margin-bottom: .3rem;
+  width: 1rem;
+}
 .nav {
   width: 200px;
   flex: 0 1 200px;
   height: 100vh;
   background: #f2f3f7;
-  display: flex;
+  /* display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: center; */
 }
-.home {
+.main-container {
   flex: 1 1 0;
   height: 100vh;
   overflow-y: scroll;
+  margin-left: 2.2rem;
+}
+@media screen and (max-width: 768px) {
+  .nav {
+    display: none;
+  }
+  .toggle-sidebar {
+    display: block;
+  }
+  .show-sidebar {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
 }

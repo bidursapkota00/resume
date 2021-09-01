@@ -13,7 +13,15 @@ const Layout = ({children}) => {
     }, [])
     return (
         <div className='layout'>
-            <div className="nav">
+            <div className="toggle-sidebar" onClick={() => {
+                const ref = document.querySelector('.nav')
+                ref.classList.add('show-sidebar')
+            }}>
+                <div className=""></div>
+                <div className=""></div>
+                <div className=""></div>
+            </div>
+            <div className='nav'>
                 <Navbar/>
             </div>
             {children}
