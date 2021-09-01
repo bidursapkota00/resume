@@ -6,7 +6,6 @@ import { useSelector } from 'react-redux';
 const Navbar = () => {
     let person = null
     person = useSelector(state => state.fetch.person)
-    console.log(person.firstName)
     return (
         <div className="nav-container">
             <div className='navbar'>
@@ -27,7 +26,7 @@ const Navbar = () => {
                             ref.classList.remove('show-sidebar')
                         }
                     }}>
-                        <li class="active"><a href="#" data-nav-section="home">Home</a></li>
+                        <li class="active"><a href="#top" data-nav-section="home">Home</a></li>
                         <li><a href="#about">About</a></li>
                         <li><a href="#skills">Skills</a></li>
                         <li><a href="#education">Education</a></li>

@@ -1,0 +1,87 @@
+.i-am-description {
+    width: 100%;
+  }
+#top {
+    text-align: center;
+    margin: 4rem 4rem;
+}
+.circle {
+    height: .6rem;
+    width: .6rem;
+    background-color: #fff;
+    margin-bottom: 1rem;
+    border-radius: 100%;
+    border: 2px solid black;
+}
+.i-am {
+    position: relative;
+    margin-top: 4rem;
+    transform: translateX(90%);
+}
+.front {
+    animation: slide1 4s linear infinite;
+    animation-delay: -5s;
+}
+.back {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    animation: slide2 4s linear infinite;
+    animation-delay: -3s;
+}
+@media screen and (min-width: 668px) and (max-width: 768px) {
+    .back {
+        left: -7%;
+    }
+}
+@media screen and (min-width: 900px) and (max-width: 1100px) {
+    .back {
+        left: -10%;
+    }
+}
+@media screen and (min-width: 1100px) and (max-width: 1200px) {
+    .back {
+        left: -15%;
+    }
+}
+@media screen and (min-width: 1200px) {
+    .back {
+        left: -20%;
+    }
+}
+@keyframes slide1 {
+    0% {transform: translateX(90%);}
+    25% {transform: translateX(-90%);}
+    50% {transform: translateX(-90%);}
+    100% {transform: translateX(-500%);}
+}
+@keyframes slide2 {
+    0% {transform: translateX(90%);}
+    25% {transform: translateX(-90%);}
+    50% {transform: translateX(-90%);}
+    100% {transform: translateX(-500%);}
+}
+
+.circle1 {
+    animation: animation 4s infinite;
+    animation-delay: -.7s;
+}
+.circle2 {
+    animation: animation2 4s infinite;
+    animation-delay: 1s;
+}
+@keyframes animation {
+    0%     {background-color: #fff;}
+    50.0%  {background-color:red;}
+    100.0%  {background-color:#fff;}
+}
+@keyframes animation2 {
+    0%     {background-color: #fff;}
+    50.0%  {background-color: blue;}
+    100.0%  {background-color:#fff;}
+}
+.view-portfolio-button a {
+    border: 1px solid #c0c0c0;
+    padding: 10px;
+    color: slategrey;
+}

@@ -18,16 +18,12 @@
   flex: 0 1 200px;
   height: 100vh;
   background: #f2f3f7;
-  /* display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center; */
+  z-index: 10;
 }
 .main-container {
   flex: 1 1 0;
-  height: 100vh;
   overflow-y: scroll;
-  margin-left: 2.2rem;
+  overflow-x: hidden;
 }
 @media screen and (max-width: 768px) {
   .nav {
