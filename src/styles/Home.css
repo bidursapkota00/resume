@@ -3,7 +3,8 @@
   }
 #top {
     text-align: center;
-    margin: 4rem 4rem;
+    padding: 4rem 4rem;
+    box-sizing: border-box;
 }
 .circle {
     height: .6rem;
@@ -17,6 +18,9 @@
     position: relative;
     margin-top: 4rem;
     transform: translateX(90%);
+}
+.i-am h1 {
+    font-family: 'Kaisei HarunoUmi', serif;
 }
 .front {
     animation: slide1 4s linear infinite;

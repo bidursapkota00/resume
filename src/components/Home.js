@@ -15,14 +15,14 @@ const Home = () => {
                         <h1>Hi!</h1>
                         <h1>I'm {person.firstName} {" "} {person.middleName} {" "} {person.lastName}</h1>
                         <p className='view-portfolio-button'>
-                            <a href="">DOWNLOAD CV</a>
+                            <a href={person.cvLink}>DOWNLOAD CV</a>
                         </p>
                     </div>
                     <div className="back">
                         <h1>I'm</h1>
                         <h1>{person.mainJobTitle}</h1>
                         <p className='view-portfolio-button'>
-                            <a href="">VIEW PORTFOLIO</a>
+                            <a href={person.cvLink}>VIEW PORTFOLIO</a>
                         </p> 
                     </div>
                 </div>
