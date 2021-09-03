@@ -1,0 +1,11 @@
+.education {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+#edu h1 {
+    font-family: 'Kaisei HarunoUmi', serif;
+}
+#edu {
+    margin: 1rem;
+}

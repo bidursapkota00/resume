@@ -1,5 +1,6 @@
 import React from "react";
 import About from "./components/About";
+import { Education } from "./components/Education";
 import Home from "./components/Home";
 import Skills from "./components/Skills";
 
@@ -17,6 +18,7 @@ const App = () => {
       <Home />
       <About/>
       <Skills/>
+      <Education/>
     </div>
   );
 };
