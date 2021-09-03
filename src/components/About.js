@@ -32,7 +32,7 @@ const About = () => {
                                         <div className="front-panel">{skill}</div>
                                         <div className="back-panel">{person.basicSkills[i + 1]}</div>
                                     </li>
-                                    )
+                                )
                             }
                             else {
                                 return ''
@@ -40,14 +40,6 @@ const About = () => {
                             
                         })
                     }
-                    {/* <li>
-                        <div className="front-panel">{person.basicSkills[0]}</div>
-                        <div className="back-panel">{person.basicSkills[1]}</div>
-                    </li>
-                    <li>
-                        <div className="front-panel">{person.basicSkills[2]}</div>
-                        <div className="back-panel">{person.basicSkills[3]}</div>
-                    </li> */}
                 </ul>
             </div>
         </div>
