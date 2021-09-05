@@ -1,0 +1,85 @@
+#contact {
+    margin: 5rem 1rem;
+}
+#contact h1 {
+    font-family: 'Kaisei HarunoUmi', serif;
+}
+.contact-container {
+    display: flex;
+}
+.contact-sect {
+    flex: 1;
+    margin-bottom: 3rem;
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+}
+.ContactItem {
+    color: whitesmoke;
+    min-width: 300px;
+}
+.ContactItem:not(:last-child) {
+    margin-bottom: 1rem;
+}
+.contact {
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    height: 10rem;
+    background-color: #d0d0d0;
+    border-radius: 10px;
+}
+.contact > img {
+    padding: 1rem;
+    border: 2px solid #2e344e;
+    border-radius: 10px;
+    max-width: 94px;
+}
+.right-items {
+    margin-left: 2rem;
+}
+.map-sect > iframe {
+    width: 100%;
+    height: 100%;
+}
+.map-sect {
+    padding: 10px;
+    flex: 1;
+    margin-top: 3rem;
+    margin-right: 2rem;
+    margin-bottom: 3rem;
+    border-radius: 10px;
+    border: 1px solid #c0c0c0;
+}
+.right-items > h6 {
+    font-size: 1.4rem;
+    color: blueviolet;
+}
+.right-items p {
+    color: #505050;
+}
+@media (max-width: 1000px) {
+    .contact-container {
+        flex-direction: column;
+    }
+    .map-sect {
+        min-height: 400px;
+        margin: 0;
+    }
+    .map-sect > iframe {
+        min-height: 400px;
+    }
+}
+@media (max-width: 500px) {
+    .contact > img {
+        width: 50px !important;
+        height: 50px !important;
+        padding: 2px;
+    }
+    .ContactItem {
+        min-width: 200px !important;
+    }
+    .right-items {
+        margin-left: .5rem;
+    }
+}
