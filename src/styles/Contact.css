@@ -7,6 +7,9 @@
 .contact-container {
     display: flex;
 }
+h6 {
+    margin: 10px 0;
+}
 .contact-sect {
     flex: 1;
     margin-bottom: 3rem;
