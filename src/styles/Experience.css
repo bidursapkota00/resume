@@ -1,0 +1,53 @@
+#experience {
+    margin: 1rem;
+}
+#experience h1 {
+    font-family: 'Kaisei HarunoUmi', serif;
+}
+.exp-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: burlywood;
+}
+.exp {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+.exp span {
+    font: 2em sans-serif;
+    width: 100%;
+}
+.exp text {
+    width: 100%;
+    color: #606060;
+}
+.title {
+    font-size: 20px;
+    margin-top: 1rem;
+}
+@media screen and (max-width: 500px) {
+    .exp {
+        width: 280px !important;
+        margin-left: 1rem;
+    }
+}
+@media screen and (max-width: 450px) {
+    .exp {
+        margin-left: 2rem;
+    }
+}
+@media screen and (max-width: 390px) {
+    .exp {
+        margin-left: 4rem;
+    }
+}
+@media screen and (max-width: 330px) {
+    .exp {
+        width: 250px !important;
+        margin-left: 5rem;
+    }
+}

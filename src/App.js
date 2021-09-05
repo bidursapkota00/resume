@@ -1,6 +1,7 @@
 import React from "react";
 import About from "./components/About";
 import { Education } from "./components/Education";
+import Experience from "./components/Experience";
 import Home from "./components/Home";
 import Skills from "./components/Skills";
 
@@ -19,6 +20,7 @@ const App = () => {
       <About/>
       <Skills/>
       <Education/>
+      <Experience/>
     </div>
   );
 };
